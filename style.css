@@ -57,7 +57,7 @@ main{
 }
 
 #container .faq h1{
-    font-size: 100%;
+    font-size: 30pxs;
     margin-top: 50px;
     margin-left: 30px;
 }
@@ -73,7 +73,7 @@ main{
     text-decoration: none ;
 }
 #container .faq ul .faqs li{
- 
+ font-size: 15px;
  color: black;
 }
 hr{
