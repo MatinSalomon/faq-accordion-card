@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&display=swap');
+:root{
+    --veryDarkDeskBlue: hsl(238, 29%, 16%);
+    --softRed: hsl(14, 88%, 65%);
+    --softViolet: hsl(273, 75%, 66%);
+    --softBlue: hsl(240, 73%, 65%);
+    --veryDarGraBlue: hsl(237, 12%, 33%);
+    --darkGraBlue: hsl(240, 6%, 50%);
+    --ligthGraBlue: hsl(240, 5%, 91%);
+}
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(var(--softViolet), var(--softBlue));
+}
+
+main{
+    position: relative;
+}
+
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 65%;
+    background-color: var(--ligthGraBlue);
+    border-radius: 20px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container .imgContainer{
+    margin: 0%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container .imgContainer img{
+    height: 70%;
+    width: 100%;
+}
+
+#container .faq{
+    height: 100%;
+    width: 50%;
+
+}
+
+#container .faq h1{
+    font-size: 100%;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+#container .faq ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    font-size: 70%;
+}
+#container .faq ul .faqs{
+    text-decoration: none ;
+}
+#container .faq ul .faqs li{
+ 
+ color: black;
+}
+hr{
+    margin-bottom: 7%;
+}
+#container .faq ul .faqs li:hover{
+    color: var(--softRed);
+}
+.pFaqs{
+    display: none;
+    color: var(--veryDarGraBlue);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 375px) {
+    
+    #container{ 
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 70%;    
+        width: 90%;
+    }
+    #container .imgContainer{
+        height: 37.5%;
+        width:  75%;
+        position: absolute; 
+        top: -21%;
+    }
+
+    #container .faq{
+        height: 100%;
+        width: 100%;
+        margin-top: 30%;
+        margin-right: 5%;
+    }
+    #container .faq h1{
+        font-size: 200%;
+        text-align: center;
+
+    }
+    #container .faq ul .faqs li{
+        font-size: 15px;
+        text-align: center;
+    }
+}
